@@ -1,0 +1,40 @@
+{%extends "main.html" %}
+
+{% block body %}
+
+    <div clas="container">
+
+        <div class="row">
+
+            <h1> Please provide data </h1>
+            <hr>
+
+        <form action="/_pushData/" method='POST'>
+            <div class="form-group">
+                <label for='input1'>input1</label>
+                <input type="number" name="input1" class="form.control" placeholder="input1" id="input1">
+            </div>
+
+            <div class="form-group">
+                <label for='input2'>input2</label>
+                <input type="number" name="input2" class="form.control" placeholder="input2" id="input2">
+            </div>
+
+            <div class="form-group">
+                <label for='input3'>input3</label>
+                <input type="number" name="input3" class="form.control" placeholder="input3" id="input3">
+            </div>
+
+            <div class="form-group">
+                <label for='input4'>input4</label>
+                <input type="number" name="input4" class="form.control" placeholder="input4" id="input4">
+            </div>
+            
+            <button class="btn btn-sucess"> Process data </button>
+        </form>
+
+        </div>
+
+    </div>
+
+{% endblock %}
