@@ -42,10 +42,10 @@ def operation(input1, input2, input3, input4):
     data = xlrd.open_workbook("data_xl")
     wb = copy(data)
     Sheet1=wb.get_sheet(0)
-    Sheet1.write(1,2,input1)
-    Sheet1.write(2,2,input2)
-    Sheet1.write(3,2,input3)
-    Sheet1.write(4,2,input4)
+    Sheet1.write(1,2,int(input1))
+    Sheet1.write(2,2,int(input2))
+    Sheet1.write(3,2,int(input3))
+    Sheet1.write(4,2,int(input4))
     wb.save('excel-app.xlsx')
 
 if __name__=="__main__":
